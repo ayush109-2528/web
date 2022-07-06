@@ -1,0 +1,60 @@
+body{
+    background-color: lightblue;
+}
+.container
+{
+    margin: 50px auto;
+    width: 600px;
+    min-height: 400px;
+    border: 2px solid red;
+    background-color: lightgray;
+    border-radius: 30px;
+    /* margin: auto; */
+    overflow: scroll;
+    
+}
+h2
+{
+    text-align: center;
+}
+input[type="text"],input[type="password"]
+{
+    width: 300px;
+    height: 30px;
+    border: 0px;
+    outline: 0px;
+    border-bottom: 2px solid blue;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+label
+{
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.fa-eye
+{
+    font-size: 30px;
+    background-color: rgba(42, 122, 233, 0.126);
+}
+input[type="submit"],input[type="reset"]
+{
+    margin: 20px 20px;
+    background-color: lightblue;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+#btn
+{
+    width: 100%;
+    margin: auto;
+}
+input:valid{
+    border-right: 10px solid green;
+}
+input:invalid
+{
+    border-right: 10px solid red;
+}

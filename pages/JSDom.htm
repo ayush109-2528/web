@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .para
+        {
+            border: 2px solid red;
+        }
+    </style>
+    <h1> this is heading</h1>
+    <h1 id="head2"> this is heading</h1>
+    <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo deleniti harum
+        quis sit, corrupti pariatur libero officiis fugit nihil amet repellat rem quos 
+        illum aut mollitia repudiandae culpa magnam, sed ipsum at officia? 
+        reprehenderit sit.
+    </p>
+    <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo deleniti harum
+        quis sit, corrupti pariatur libero officiis fugit nihil amet repellat rem quos 
+        illum aut mollitia repudiandae culpa magnam, sed ipsum at officia? 
+        reprehenderit sit.
+    </p>
+    <input type="text" name="username" />
+    <button onclick="alert('Button cllicked')">Click me</button>
+    <button onclick="hello()">Click me 2</button>
+    <button >Click me 3 </button>
+    <script>
+        // document.title = "New title";
+        // var x = document.getElementsByTagName("h1");
+        // console.log(x);
+        // var y=document.getElementsByName("username");
+        // console.log(y);
+        // var z=document.getElementById("head2");
+        // console.log(z);
+        // var p =document.getElementsByClassName('para')[1];
+        // console.log(p);
+        // p.style.color = "blue";
+        // z.textContent ="update by get element";
+        // y[0].style.backgroundColor = "pink";
+        // x[0].innerText = "updated text";
+        // x[0].style.color = "red";
+        // x[1].style.backgroundColor = "grey";
+        // x[0].style.textAlign="center";
+        // x[1].style.display="none";
+        // z.style.display ="block";
+        //  var p1 = document.querySelector('.para');
+        // console.log(p1)
+        // p1.style.borderColor = "green";
+        // var p2 =document.querySelectorAll('.para')[1]
+        // console.log(p2)
+        // p2.style.borderColor ="green"
+        // document.querySelector('#head2').style.textAlign="right";
+        function hello()
+        {
+            alert("button cllick");
+            document.querySelector("input").style.borderColor="red";
+        }
+        var x = document.querySelectorAll('button')[2];
+        // event binding
+        x.onclick = function(){
+            document.getElementsByTagName('h1')[1].style.textAlign = "center";
+            document.getElementsByTagName('h1')[1].style.backgroundColor = "orange";
+        };
+        // };
+        // x.onclick = () =>
+        // (document.getElementsByTagName('h1')[1].style.textAlign = "center");
+        x.onmouseover =()=>
+        {
+            x.style.backgroundColor="red";
+        }
+        x.onmouseleave =()=>
+        {
+            x.style.backgroundColor="grey";
+        }
+        x.addEventListener("click",abc);
+        // x.addEventListener("mouseove",xyz);
+        // x.addEventListener("mouseleave",pqr);
+        x.removeEventListener('click',abc);
+        function abc()
+        {
+            document.querySelector("h1").style.color = "red";
+        }
+    </script>
+</body>
+</html>

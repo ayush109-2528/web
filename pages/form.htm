@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User data </title>
+    
+</head>
+<body>
+    <link rel="stylesheet" href="./css/formdesign.css">
+    <div class="container">
+    <h2>Student registration</h2>
+    <form action="./account.htm" method="get">
+        <div>
+            <label for="" class="labels">First name:</label>
+            <input type="text" placeholder="Enter your first name" name="fname" /> 
+        </div>
+        <div>
+            <label for="" class="labels">Second name:</label>
+            <input type="text" placeholder="Enter your second name" name="lname"/> 
+        </div>
+        <div>
+            <label for="" class="labels">Password:</label>
+            <input type="password" placeholder="Enter your password" name="pwd" required/>
+            <span style="color: red;"></span>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <div>
+            <label for="" class="labels">Gender:</label>
+            <input type="radio" name="gender" value="Male"/>Male 
+            <input type="radio" name="gender" value="Female"/>Female
+        </div>
+        <br/>
+        <div>
+            <label for="" class="labels">Hobbies</label>
+            <input type="checkbox" name="hobbies" value="Reading"/>Reading
+            <input type="checkbox" name="hobbies"value="Writing"/>Writinig
+            <input type="checkbox" name="hobbies" value="Music"/>Music
+            <input type="checkbox" name="hobbies" value="Sports"/>Sports
+            <input type="checkbox" name="hobbies"/>Other
+        </div>
+        <br/>
+        <!-- <div>
+            <label for="" class="lables">enter other hobbies</label>
+            <input type="text" placeholder="hobbies"/>
+        </div> -->
+        <div>
+            <label for="" class="labels">Select City</label>
+            <select name=""id="lists">                
+            <option selected disabled >select here below</option>
+            <option value="delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="Kerla">Kerla</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Lucknnow">Lucknnow</option>
+        </select>
+        </div>
+        <br/>
+        <div>
+            <label for="" class="labels">Enter Mobile No.</label>
+            <input type="number" name="Enter here" required/>
+            <!-- <input type="radio" name="gender" value="Female"/>Female -->
+        </div>
+        <br/>
+        <div>
+            <label for="" class="labels">Select Date Of Birth</label>
+            <input type="date" name="DOB"/> 
+            <!-- <input type="radio" name="gender" value="Female"/>Female -->
+        </div>
+        <br/>
+        <div>
+            <label for="" class="labels">Select Date Of time</label>
+            <input type="time" name="DOB"/> 
+            <!-- <input type="radio" name="gender" value="Female"/>Female -->
+        </div>
+        <br/>
+        <input type="submit">
+        <input type="reset">
+        </form>
+    </div>
+</body>
+</html>

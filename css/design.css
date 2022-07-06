@@ -1,0 +1,16 @@
+h2{
+    color: blue;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+p
+{
+    color: coral;
+    text-align: left;
+    justify-content: baseline;
+}
+h1
+{
+    color: red;
+    text-align: center;
+}
