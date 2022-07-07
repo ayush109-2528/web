@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session Stroage</title>
+</head>
+<body>
+    <style>
+        h2
+        {
+            text-align: center;
+        }
+    </style>
+    <h2>session Stroage Demo</h2>
+    <pre>
+        Enter name:
+        <input type="text" id="textbox">
+        Enter email:
+        <input type="text" id="textbox1">
+        Enter phone:
+        <input type="number" id="textbox2">
+        <button id="btn">add me</button>
+        <button id="btn2">clear </button>
+
+        <a href="../html page/stroagedata.htm">see details</a>
+    </pre>
+    <script>
+        input1 =document.getElementById("textbox");
+        input2=document.getElementById("textbox1");
+        input3 =document.getElementById("textbox2");
+        btn = document.getElementById("btn");
+        delbtn = document.getElementById("btn2");
+        var data ={
+            name: "",
+            email: "",
+            phone: "",
+        };
+        btn.onclick = function()
+        {
+            data.name = input1.value;
+            data.email = input2.value;
+            data.phone = input3.value;
+            // var data =input.value;
+            window.sessionStorage.setItem("Info",JSON.stringify(data));
+            input1.value ="";
+            input2.value ="";
+            input3.value ="";
+        };
+        delbtn.onclick = function()
+        {
+            sessionStorage.removeItem("Info");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display stroage data</title>
+</head>
+<body>
+    <h2>Display Data</h2>
+    <p id="output"></p>
+    <a href="../html page/localstroage.htm">back to first page</a>
+    <script>
+        var output = document.getElementById("output");
+        data = JSON.parse(localStorage.getItem("Info"));
+        console.log(data);
+        output.innerText= `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}`;
+    </script>
+</body>
+</html>
